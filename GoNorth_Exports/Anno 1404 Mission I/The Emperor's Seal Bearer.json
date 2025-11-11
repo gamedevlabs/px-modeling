@@ -1,0 +1,99 @@
+{
+  "Id": "54481a0e-a9ae-4b2b-b0cc-ce912907b590",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "The Emperor's Seal Bearer",
+  "Description": "The player has to select Lord Richard Northburgh's Flagship to administer the player's oath of loyalty to the Emperor before gaining access to the island.\n",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "b5a568a0-ec33-4844-8009-ae33a8987f8d",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player selects Lord Richard Northburgh's Flagship",
+      "Id": "053065a1-0d1a-475f-9e42-5480987d235c",
+      "X": 234,
+      "Y": 299
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "c09dd344-60e1-4095-b67f-4932b57744bf"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"8374e4af-6a1b-4760-a6ff-789b4040ee15\",\"fieldName\":\"Number of chapels\",\"operator\":\"=\",\"compareValue\":\"0\",\"selectedObjectId\":\"c09dd344-60e1-4095-b67f-4932b57744bf\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "fb7c17f4-fd97-4f08-abaa-0f548da61c63",
+      "X": 607,
+      "Y": 284
+    }
+  ],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Player has a chapel built",
+      "Color": "#CC0000",
+      "Id": "2cecf605-cbc6-44e6-ad4a-fa9e2150be29",
+      "X": 1079,
+      "Y": 408
+    },
+    {
+      "Name": "Player has no chapel built",
+      "Color": "#FFFFFF",
+      "Id": "426344d7-0bdf-4fd7-a12b-ac792cb88d53",
+      "X": 1082,
+      "Y": 214
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "b5a568a0-ec33-4844-8009-ae33a8987f8d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "053065a1-0d1a-475f-9e42-5480987d235c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "053065a1-0d1a-475f-9e42-5480987d235c",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fb7c17f4-fd97-4f08-abaa-0f548da61c63",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fb7c17f4-fd97-4f08-abaa-0f548da61c63",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "426344d7-0bdf-4fd7-a12b-ac792cb88d53",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fb7c17f4-fd97-4f08-abaa-0f548da61c63",
+      "SourceNodePort": "else",
+      "TargetNodeId": "2cecf605-cbc6-44e6-ad4a-fa9e2150be29",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T13:05:30.3059147+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

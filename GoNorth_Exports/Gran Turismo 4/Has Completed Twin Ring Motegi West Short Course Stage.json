@@ -1,0 +1,87 @@
+{
+  "Id": "bc8dc993-fae3-4f2f-98a1-7f3294c1a69e",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Has Completed Twin Ring Motegi West Short Course Stage",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "e2b2a099-2b08-4f8d-9976-1b02d91e5a68",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Has Completed Twin Ring Motegi West Short Course",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "86293633-80d0-4c13-966c-f0f3700fa971",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet completed the race.",
+      "Id": "ea407320-ae72-436b-a6a0-857f3b32dfab",
+      "X": 190,
+      "Y": 305
+    },
+    {
+      "Text": "The player has won the race.",
+      "Id": "14947e9c-08db-4441-a4cc-fb4926cc32f8",
+      "X": 819,
+      "Y": 303
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "bc8dc993-fae3-4f2f-98a1-7f3294c1a69e",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"e2b2a099-2b08-4f8d-9976-1b02d91e5a68\",\"fieldName\":\"Has Completed Twin Ring Motegi West Short Course\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "6cea0872-ea17-4222-a52c-115db514a692",
+      "X": 509,
+      "Y": 248
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "ea407320-ae72-436b-a6a0-857f3b32dfab",
+      "SourceNodePort": "output",
+      "TargetNodeId": "6cea0872-ea17-4222-a52c-115db514a692",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6cea0872-ea17-4222-a52c-115db514a692",
+      "SourceNodePort": "output",
+      "TargetNodeId": "14947e9c-08db-4441-a4cc-fb4926cc32f8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "86293633-80d0-4c13-966c-f0f3700fa971",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ea407320-ae72-436b-a6a0-857f3b32dfab",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:47:09.1037849+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

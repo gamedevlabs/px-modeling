@@ -1,0 +1,169 @@
+{
+  "Id": "df5cb3d8-e4d7-45b8-a0f6-5c3cf049aea4",
+  "ProjectId": "fef2183e-a56e-4f16-8ac1-e048a1e20c13",
+  "Name": "Difficulty Selection",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "39b27522-0c75-4408-a4e8-2dce40b67522",
+      "FieldType": 3,
+      "CreatedFromTemplate": false,
+      "Name": "Selected Difficulty",
+      "Value": "Easy",
+      "AdditionalConfiguration": "[\"Easy\",\"Medium\",\"Hard\"]",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "a1adbae2-9199-4107-8b88-7547d0995ace",
+      "X": 16,
+      "Y": 456
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player selects the easy difficulty",
+      "Id": "106a0764-3049-45fb-bebc-2b92262b8d98",
+      "X": 297,
+      "Y": 198
+    },
+    {
+      "Text": "The player selects the medium difficulty",
+      "Id": "0be2073c-3abe-461f-a25d-14037fe730ca",
+      "X": 287,
+      "Y": 405
+    },
+    {
+      "Text": "The player selects the hard difficulty",
+      "Id": "559b32de-e5e2-42c6-bc53-94634b4eb62d",
+      "X": 297,
+      "Y": 632
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "df5cb3d8-e4d7-45b8-a0f6-5c3cf049aea4",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"39b27522-0c75-4408-a4e8-2dce40b67522\",\"fieldName\":\"Selected Difficulty\",\"operator\":\"=\",\"valueChange\":\"Easy\"}",
+      "Id": "02d4a94b-6d26-41a9-9d74-9f3a2f192dcc",
+      "X": 710,
+      "Y": 172
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "df5cb3d8-e4d7-45b8-a0f6-5c3cf049aea4",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"39b27522-0c75-4408-a4e8-2dce40b67522\",\"fieldName\":\"Selected Difficulty\",\"operator\":\"=\",\"valueChange\":\"Medium\"}",
+      "Id": "718d92a2-e9f6-43d3-82e8-eb7684f2a6ca",
+      "X": 708,
+      "Y": 397
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "df5cb3d8-e4d7-45b8-a0f6-5c3cf049aea4",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"39b27522-0c75-4408-a4e8-2dce40b67522\",\"fieldName\":\"Selected Difficulty\",\"operator\":\"=\",\"valueChange\":\"Hard\"}",
+      "Id": "c12fca35-ecb5-4e09-834b-7826b57fc397",
+      "X": 704,
+      "Y": 619
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Difficulty selected",
+      "Color": "#FFFFFF",
+      "Id": "932b65af-67b5-4be3-b2df-9d5c44b26e36",
+      "X": 1192,
+      "Y": 418
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "a1adbae2-9199-4107-8b88-7547d0995ace",
+      "SourceNodePort": "output",
+      "TargetNodeId": "106a0764-3049-45fb-bebc-2b92262b8d98",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a1adbae2-9199-4107-8b88-7547d0995ace",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0be2073c-3abe-461f-a25d-14037fe730ca",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a1adbae2-9199-4107-8b88-7547d0995ace",
+      "SourceNodePort": "output",
+      "TargetNodeId": "559b32de-e5e2-42c6-bc53-94634b4eb62d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "106a0764-3049-45fb-bebc-2b92262b8d98",
+      "SourceNodePort": "output",
+      "TargetNodeId": "02d4a94b-6d26-41a9-9d74-9f3a2f192dcc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0be2073c-3abe-461f-a25d-14037fe730ca",
+      "SourceNodePort": "output",
+      "TargetNodeId": "718d92a2-e9f6-43d3-82e8-eb7684f2a6ca",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "559b32de-e5e2-42c6-bc53-94634b4eb62d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "c12fca35-ecb5-4e09-834b-7826b57fc397",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c12fca35-ecb5-4e09-834b-7826b57fc397",
+      "SourceNodePort": "output",
+      "TargetNodeId": "932b65af-67b5-4be3-b2df-9d5c44b26e36",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "718d92a2-e9f6-43d3-82e8-eb7684f2a6ca",
+      "SourceNodePort": "output",
+      "TargetNodeId": "932b65af-67b5-4be3-b2df-9d5c44b26e36",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "02d4a94b-6d26-41a9-9d74-9f3a2f192dcc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "932b65af-67b5-4be3-b2df-9d5c44b26e36",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T11:45:04.6509999+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

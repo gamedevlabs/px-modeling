@@ -1,0 +1,598 @@
+{
+  "Id": "f735c720-f333-4e90-97fd-559a34361eb6",
+  "ProjectId": "39c934f2-476c-41dd-a278-339477387e58",
+  "Name": "Next Piece",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "f5109c1d-cd68-43b3-a729-e25c1ba1a8e6",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Next Piece Value",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "10e3d2cb-e145-4aba-bd3d-b1a5fe4c5229",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player places a piece",
+      "Id": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "X": 1796,
+      "Y": 323
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":1}}]"
+        },
+        {
+          "Id": 1,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":2}}]"
+        },
+        {
+          "Id": 2,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":3}}]"
+        },
+        {
+          "Id": 3,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":4}}]"
+        },
+        {
+          "Id": 4,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":5}}]"
+        },
+        {
+          "Id": 5,
+          "DependsOnObjects": [],
+          "ConditionElements": "[{\"conditionType\":19,\"conditionData\":{\"operator\":\"=\",\"minValue\":1,\"maxValue\":7,\"compareValue\":6}}]"
+        }
+      ],
+      "CurrentConditionId": 6,
+      "Id": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "X": 401,
+      "Y": 120
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"1\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "235e4934-51ff-4e2b-8327-c8c32063acb1",
+      "X": 871,
+      "Y": -220
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"2\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "20c89447-9d40-4eca-94aa-a0f0cebe0fbe",
+      "X": 867,
+      "Y": -11
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"3\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "6d41262f-5786-447d-a32e-82fb75f6f8d7",
+      "X": 868,
+      "Y": 198
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"4\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "57ee205b-405a-4ce0-8588-ecef4992e1c5",
+      "X": 871,
+      "Y": 396
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"5\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "08d8bd4c-0c99-436d-8ba0-28c9f15d9550",
+      "X": 865,
+      "Y": 594
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"6\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "e0a04620-7747-4be1-8121-83c3de76fbed",
+      "X": 872,
+      "Y": 806
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "a8b75b08-ac9d-4c41-a106-ec022d7589f3"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"40e5a7c9-0ef1-4bc6-97d2-9709d7d45b10\",\"fieldName\":\"Current Piece Value\",\"operator\":\"=\",\"compareValue\":\"7\",\"selectedObjectId\":\"a8b75b08-ac9d-4c41-a106-ec022d7589f3\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "dd04429e-a090-41e1-af6f-e5d0101a40cf",
+      "X": 876,
+      "Y": 1010
+    }
+  ],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "f68e37f1-2e8e-4146-815c-5bb7220ff992",
+      "X": 1311,
+      "Y": -229
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "d9ed6b5e-ac31-4358-bb25-57f7f1a1cdf2",
+      "X": 1302,
+      "Y": -5
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "eff459ee-40f4-4084-a44d-b40c754c79fd",
+      "X": 1312,
+      "Y": 202
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"4\"}",
+      "Id": "4e67d00a-cffd-40be-9eae-811f33760d6f",
+      "X": 1310,
+      "Y": 417
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"5\"}",
+      "Id": "17e83a43-f048-4b63-a155-3da2ce434293",
+      "X": 1313,
+      "Y": 627
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"6\"}",
+      "Id": "065d33a8-f4de-42e3-9da8-cc14cce046c5",
+      "X": 1320,
+      "Y": 840
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f735c720-f333-4e90-97fd-559a34361eb6",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"f5109c1d-cd68-43b3-a729-e25c1ba1a8e6\",\"fieldName\":\"Next Piece Value\",\"operator\":\"=\",\"valueChange\":\"7\"}",
+      "Id": "b44b14c1-8761-4466-9171-7d81e093afff",
+      "X": 1316,
+      "Y": 1049
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "10e3d2cb-e145-4aba-bd3d-b1a5fe4c5229",
+      "SourceNodePort": "output",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "235e4934-51ff-4e2b-8327-c8c32063acb1",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "235e4934-51ff-4e2b-8327-c8c32063acb1",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1164,
+          "Y": -234
+        },
+        {
+          "X": 445,
+          "Y": -151
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "SourceNodePort": "output",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1930,
+          "Y": 1190
+        },
+        {
+          "X": 278,
+          "Y": 1235
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "235e4934-51ff-4e2b-8327-c8c32063acb1",
+      "SourceNodePort": "else",
+      "TargetNodeId": "f68e37f1-2e8e-4146-815c-5bb7220ff992",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f68e37f1-2e8e-4146-815c-5bb7220ff992",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition1",
+      "TargetNodeId": "20c89447-9d40-4eca-94aa-a0f0cebe0fbe",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition2",
+      "TargetNodeId": "6d41262f-5786-447d-a32e-82fb75f6f8d7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition3",
+      "TargetNodeId": "57ee205b-405a-4ce0-8588-ecef4992e1c5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition4",
+      "TargetNodeId": "08d8bd4c-0c99-436d-8ba0-28c9f15d9550",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "condition5",
+      "TargetNodeId": "e0a04620-7747-4be1-8121-83c3de76fbed",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "SourceNodePort": "else",
+      "TargetNodeId": "dd04429e-a090-41e1-af6f-e5d0101a40cf",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "20c89447-9d40-4eca-94aa-a0f0cebe0fbe",
+      "SourceNodePort": "else",
+      "TargetNodeId": "d9ed6b5e-ac31-4358-bb25-57f7f1a1cdf2",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "20c89447-9d40-4eca-94aa-a0f0cebe0fbe",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1201,
+          "Y": -25
+        },
+        {
+          "X": 495,
+          "Y": 32
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "dd04429e-a090-41e1-af6f-e5d0101a40cf",
+      "SourceNodePort": "else",
+      "TargetNodeId": "b44b14c1-8761-4466-9171-7d81e093afff",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "dd04429e-a090-41e1-af6f-e5d0101a40cf",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1181,
+          "Y": 998
+        },
+        {
+          "X": 399,
+          "Y": 936
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e0a04620-7747-4be1-8121-83c3de76fbed",
+      "SourceNodePort": "else",
+      "TargetNodeId": "065d33a8-f4de-42e3-9da8-cc14cce046c5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e0a04620-7747-4be1-8121-83c3de76fbed",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1197,
+          "Y": 795
+        },
+        {
+          "X": 490,
+          "Y": 731
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "08d8bd4c-0c99-436d-8ba0-28c9f15d9550",
+      "SourceNodePort": "else",
+      "TargetNodeId": "17e83a43-f048-4b63-a155-3da2ce434293",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "08d8bd4c-0c99-436d-8ba0-28c9f15d9550",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1236,
+          "Y": 589
+        },
+        {
+          "X": 793,
+          "Y": 591
+        },
+        {
+          "X": 522,
+          "Y": 585
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "57ee205b-405a-4ce0-8588-ecef4992e1c5",
+      "SourceNodePort": "else",
+      "TargetNodeId": "4e67d00a-cffd-40be-9eae-811f33760d6f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "57ee205b-405a-4ce0-8588-ecef4992e1c5",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1231,
+          "Y": 391
+        },
+        {
+          "X": 813,
+          "Y": 393
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6d41262f-5786-447d-a32e-82fb75f6f8d7",
+      "SourceNodePort": "else",
+      "TargetNodeId": "eff459ee-40f4-4084-a44d-b40c754c79fd",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6d41262f-5786-447d-a32e-82fb75f6f8d7",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "db80e9d1-10c4-4ce3-b581-4d4ad715ff1c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1264,
+          "Y": 202
+        },
+        {
+          "X": 840,
+          "Y": 199
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "d9ed6b5e-ac31-4358-bb25-57f7f1a1cdf2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "eff459ee-40f4-4084-a44d-b40c754c79fd",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "4e67d00a-cffd-40be-9eae-811f33760d6f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "17e83a43-f048-4b63-a155-3da2ce434293",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "065d33a8-f4de-42e3-9da8-cc14cce046c5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b44b14c1-8761-4466-9171-7d81e093afff",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b14931ef-43a3-4e86-8db1-82d06d059842",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-17T15:14:21.4138187+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

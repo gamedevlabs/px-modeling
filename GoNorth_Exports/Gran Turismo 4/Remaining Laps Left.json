@@ -1,0 +1,520 @@
+{
+  "Id": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Remaining Laps Left",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "aab3bb2d-40fb-417e-a47f-5ebff20aca6a",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Laps Left",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "a40f8a55-410b-480d-b99d-bfe308674b22",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player completes a lap",
+      "Id": "197c8a6d-54d0-4fa4-b230-317a44ed3ec5",
+      "X": 998,
+      "Y": 27
+    },
+    {
+      "Text": "The player completes a lap",
+      "Id": "15633b5a-589f-4544-8ae7-da82fb0b1ad1",
+      "X": 1020,
+      "Y": 230
+    },
+    {
+      "Text": "The player completes a lap",
+      "Id": "91b3566a-f684-4071-9990-221a28fca99d",
+      "X": 995,
+      "Y": 499
+    },
+    {
+      "Text": "The player completes a lap",
+      "Id": "1928ca1f-1742-4ee9-aac4-f821341cab4d",
+      "X": 1713,
+      "Y": 501
+    },
+    {
+      "Text": "The player finished the race",
+      "Id": "2a7de3e3-d363-476b-8533-4402106660b0",
+      "X": 2419,
+      "Y": 498
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":6,\"conditionData\":{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"compareValue\":\"4\"}}]"
+        },
+        {
+          "Id": 1,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":6,\"conditionData\":{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"compareValue\":\"3\"}}]"
+        },
+        {
+          "Id": 2,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":6,\"conditionData\":{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"compareValue\":\"2\"}}]"
+        }
+      ],
+      "CurrentConditionId": 3,
+      "Id": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "X": 171,
+      "Y": 220
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"compareValue\":\"1\",\"selectedObjectId\":\"3bc45f79-9f95-4ebe-8045-1b5eaf913f7c\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "bb171ade-6cff-4b33-ab37-c9835ead32c7",
+      "X": 2777,
+      "Y": 472
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1c4cf957-edfd-47ca-9ba3-6d70741253a2"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"f9e04a12-d959-49d8-b4ef-3e8eb7d62c04\",\"fieldName\":\"Selected Race\",\"operator\":\"=\",\"compareValue\":\"Autumn Ring Mini\",\"selectedObjectId\":\"1c4cf957-edfd-47ca-9ba3-6d70741253a2\"}}]"
+        },
+        {
+          "Id": 1,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1c4cf957-edfd-47ca-9ba3-6d70741253a2"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"f9e04a12-d959-49d8-b4ef-3e8eb7d62c04\",\"fieldName\":\"Selected Race\",\"operator\":\"=\",\"compareValue\":\"Beginner Course\",\"selectedObjectId\":\"1c4cf957-edfd-47ca-9ba3-6d70741253a2\"}}]"
+        },
+        {
+          "Id": 2,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1c4cf957-edfd-47ca-9ba3-6d70741253a2"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"f9e04a12-d959-49d8-b4ef-3e8eb7d62c04\",\"fieldName\":\"Selected Race\",\"operator\":\"=\",\"compareValue\":\"High Speed Ring\",\"selectedObjectId\":\"1c4cf957-edfd-47ca-9ba3-6d70741253a2\"}}]"
+        },
+        {
+          "Id": 3,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1c4cf957-edfd-47ca-9ba3-6d70741253a2"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"f9e04a12-d959-49d8-b4ef-3e8eb7d62c04\",\"fieldName\":\"Selected Race\",\"operator\":\"=\",\"compareValue\":\"Clubman Stage Route 5\",\"selectedObjectId\":\"1c4cf957-edfd-47ca-9ba3-6d70741253a2\"}}]"
+        },
+        {
+          "Id": 4,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1c4cf957-edfd-47ca-9ba3-6d70741253a2"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"f9e04a12-d959-49d8-b4ef-3e8eb7d62c04\",\"fieldName\":\"Selected Race\",\"operator\":\"=\",\"compareValue\":\"Twin Ring Motegi West Short Course\",\"selectedObjectId\":\"1c4cf957-edfd-47ca-9ba3-6d70741253a2\"}}]"
+        }
+      ],
+      "CurrentConditionId": 5,
+      "Id": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "X": 3270,
+      "Y": -204
+    }
+  ],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"valueChange\":\"4\"}",
+      "Id": "f271b9a0-ffcc-4176-9d57-50c121d0d374",
+      "X": 655,
+      "Y": -5
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "8b9b26c9-1d64-44a2-a485-f5de28f03bbc",
+      "X": 649,
+      "Y": 229
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "fdcf51ab-e9ec-41d3-8ffa-914e1459ca46",
+      "X": 650,
+      "Y": 469
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "749b4764-2197-4c2d-b5e8-ca2bd2558ef7",
+      "X": 1349,
+      "Y": 475
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "dd905303-3868-45d5-9ff1-d201022b4e3b",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"aab3bb2d-40fb-417e-a47f-5ebff20aca6a\",\"fieldName\":\"Laps Left\",\"operator\":\"=\",\"valueChange\":\"0\"}",
+      "Id": "2540350c-4a8d-4819-9471-23a44c29bb9f",
+      "X": 2060,
+      "Y": 476
+    },
+    {
+      "ActionType": 8,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "701bb9ef-1264-4327-be2d-21931a2d4716",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"e10eac97-ccc3-4410-b6ef-02532130124d\",\"fieldName\":\"Has Completed Autumn Ring Mini\",\"operator\":\"=\",\"valueChange\":\"1\",\"objectId\":\"701bb9ef-1264-4327-be2d-21931a2d4716\"}",
+      "Id": "fe41501c-599b-4ab2-b272-4a292ab0b2a0",
+      "X": 3823,
+      "Y": -525
+    },
+    {
+      "ActionType": 8,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "f7535b77-fb1e-47e0-acc1-61081438b802",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"bab3eaab-e3db-4fe2-b58f-c5396ea8a932\",\"fieldName\":\"Has Completed Beginner Course\",\"operator\":\"=\",\"valueChange\":\"1\",\"objectId\":\"f7535b77-fb1e-47e0-acc1-61081438b802\"}",
+      "Id": "636eb175-2997-419c-af93-64deb926d5fe",
+      "X": 3836,
+      "Y": -292
+    },
+    {
+      "ActionType": 8,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "4ce0a15b-92f6-49f0-9e64-88ad807341d0",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"1ccfcf45-904b-40c0-84d2-25acdfac4259\",\"fieldName\":\"Has Completed High Speed Ring\",\"operator\":\"=\",\"valueChange\":\"1\",\"objectId\":\"4ce0a15b-92f6-49f0-9e64-88ad807341d0\"}",
+      "Id": "00d68d11-c495-4161-bab6-be0ed164850a",
+      "X": 3837,
+      "Y": -60
+    },
+    {
+      "ActionType": 8,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "bc8dc993-fae3-4f2f-98a1-7f3294c1a69e",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"e2b2a099-2b08-4f8d-9976-1b02d91e5a68\",\"fieldName\":\"Has Completed Twin Ring Motegi West Short Course\",\"operator\":\"=\",\"valueChange\":\"1\",\"objectId\":\"bc8dc993-fae3-4f2f-98a1-7f3294c1a69e\"}",
+      "Id": "ad4ca07d-4cc0-467c-baf3-3af0429ac7ea",
+      "X": 3829,
+      "Y": 374
+    },
+    {
+      "ActionType": 8,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "8b4a0f2e-962a-46ab-9aa8-fe9fa47b8bd3",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"8e984507-507f-44e5-8a2a-661a282734dd\",\"fieldName\":\"Has Completed Clubman Stage Route 5\",\"operator\":\"=\",\"valueChange\":\"1\",\"objectId\":\"8b4a0f2e-962a-46ab-9aa8-fe9fa47b8bd3\"}",
+      "Id": "e4f592fc-61bf-4e8d-9cd3-ad8d355a7459",
+      "X": 3829,
+      "Y": 160
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Race completed",
+      "Color": "#FFFFFF",
+      "Id": "f6a71855-3860-499c-910a-f962880f2a39",
+      "X": 4494,
+      "Y": 534
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "a40f8a55-410b-480d-b99d-bfe308674b22",
+      "SourceNodePort": "output",
+      "TargetNodeId": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f271b9a0-ffcc-4176-9d57-50c121d0d374",
+      "SourceNodePort": "output",
+      "TargetNodeId": "197c8a6d-54d0-4fa4-b230-317a44ed3ec5",
+      "TargetNodePort": "input",
+      "Vertices": [],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "15633b5a-589f-4544-8ae7-da82fb0b1ad1",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fdcf51ab-e9ec-41d3-8ffa-914e1459ca46",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1261,
+          "Y": 418
+        },
+        {
+          "X": 684,
+          "Y": 452
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fdcf51ab-e9ec-41d3-8ffa-914e1459ca46",
+      "SourceNodePort": "output",
+      "TargetNodeId": "91b3566a-f684-4071-9990-221a28fca99d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "91b3566a-f684-4071-9990-221a28fca99d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "749b4764-2197-4c2d-b5e8-ca2bd2558ef7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "749b4764-2197-4c2d-b5e8-ca2bd2558ef7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "1928ca1f-1742-4ee9-aac4-f821341cab4d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "1928ca1f-1742-4ee9-aac4-f821341cab4d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2540350c-4a8d-4819-9471-23a44c29bb9f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2540350c-4a8d-4819-9471-23a44c29bb9f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2a7de3e3-d363-476b-8533-4402106660b0",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "f271b9a0-ffcc-4176-9d57-50c121d0d374",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "SourceNodePort": "condition1",
+      "TargetNodeId": "8b9b26c9-1d64-44a2-a485-f5de28f03bbc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "197c8a6d-54d0-4fa4-b230-317a44ed3ec5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8b9b26c9-1d64-44a2-a485-f5de28f03bbc",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1270,
+          "Y": 194
+        },
+        {
+          "X": 683,
+          "Y": 216
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8b9b26c9-1d64-44a2-a485-f5de28f03bbc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "15633b5a-589f-4544-8ae7-da82fb0b1ad1",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "SourceNodePort": "condition2",
+      "TargetNodeId": "fdcf51ab-e9ec-41d3-8ffa-914e1459ca46",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "12fd2d79-0c47-4b2e-8028-3036717bbec3",
+      "SourceNodePort": "condition2",
+      "TargetNodeId": "fdcf51ab-e9ec-41d3-8ffa-914e1459ca46",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2a7de3e3-d363-476b-8533-4402106660b0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "bb171ade-6cff-4b33-ab37-c9835ead32c7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bb171ade-6cff-4b33-ab37-c9835ead32c7",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bb171ade-6cff-4b33-ab37-c9835ead32c7",
+      "SourceNodePort": "else",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "fe41501c-599b-4ab2-b272-4a292ab0b2a0",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "SourceNodePort": "condition1",
+      "TargetNodeId": "636eb175-2997-419c-af93-64deb926d5fe",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "SourceNodePort": "condition2",
+      "TargetNodeId": "00d68d11-c495-4161-bab6-be0ed164850a",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "63ab1d48-6bcd-41ff-ae95-6d1b8f188ad4",
+      "SourceNodePort": "condition4",
+      "TargetNodeId": "ad4ca07d-4cc0-467c-baf3-3af0429ac7ea",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fe41501c-599b-4ab2-b272-4a292ab0b2a0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "636eb175-2997-419c-af93-64deb926d5fe",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "00d68d11-c495-4161-bab6-be0ed164850a",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e4f592fc-61bf-4e8d-9cd3-ad8d355a7459",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ad4ca07d-4cc0-467c-baf3-3af0429ac7ea",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6a71855-3860-499c-910a-f962880f2a39",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T20:05:39.7597267+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

@@ -1,0 +1,131 @@
+{
+  "Id": "2ddc294a-14e8-4474-ad83-217014e6cb3c",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "To work!",
+  "Description": "This quest helps the player to deliver the fish to the island. It tasks the player with transferring 10t of fish from the island's warehouse to their ship.",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "cce0a3fc-ff90-4b0b-b15a-1ff5b135a26f",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Tons of fish on the player's ship",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "41dc1602-e53e-4a75-a9b9-ddcf8b220544",
+      "X": -180,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player transfers 10t of fish to their ship.",
+      "Id": "24296651-8c18-4b57-8660-11c5bb9066df",
+      "X": -7,
+      "Y": 302
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "6f31656a-301a-4c24-be08-11e3f5eec7cb"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"63ab0474-84eb-4ac0-8eb9-317035cca397\",\"fieldName\":\"Number of Houses Built\",\"operator\":\"<\",\"compareValue\":\"11\",\"selectedObjectId\":\"6f31656a-301a-4c24-be08-11e3f5eec7cb\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "bd2bfb32-691c-4100-b9e3-e22de5ec3c4e",
+      "X": 633,
+      "Y": 289
+    }
+  ],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "2ddc294a-14e8-4474-ad83-217014e6cb3c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"cce0a3fc-ff90-4b0b-b15a-1ff5b135a26f\",\"fieldName\":\"Tons of fish on the player's ship\",\"operator\":\"=\",\"valueChange\":\"10\"}",
+      "Id": "b2e7274c-8ee8-4d3a-89f9-a924ad2f3dc9",
+      "X": 314,
+      "Y": 281
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Player has not yet built 11 houses in total.",
+      "Color": "#FFFFFF",
+      "Id": "cd41bf9e-633a-457a-9082-eefcc9dd7233",
+      "X": 1045,
+      "Y": 189
+    },
+    {
+      "Name": "Player has at least 11 houses built.",
+      "Color": "#FFFFFF",
+      "Id": "3a9243ec-3de7-41fd-ac9d-ba322e41626f",
+      "X": 1056,
+      "Y": 393
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "41dc1602-e53e-4a75-a9b9-ddcf8b220544",
+      "SourceNodePort": "output",
+      "TargetNodeId": "24296651-8c18-4b57-8660-11c5bb9066df",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bd2bfb32-691c-4100-b9e3-e22de5ec3c4e",
+      "SourceNodePort": "else",
+      "TargetNodeId": "3a9243ec-3de7-41fd-ac9d-ba322e41626f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bd2bfb32-691c-4100-b9e3-e22de5ec3c4e",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "cd41bf9e-633a-457a-9082-eefcc9dd7233",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "24296651-8c18-4b57-8660-11c5bb9066df",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b2e7274c-8ee8-4d3a-89f9-a924ad2f3dc9",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b2e7274c-8ee8-4d3a-89f9-a924ad2f3dc9",
+      "SourceNodePort": "output",
+      "TargetNodeId": "bd2bfb32-691c-4100-b9e3-e22de5ec3c4e",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:48:59.3069827+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

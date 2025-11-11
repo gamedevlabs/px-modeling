@@ -1,0 +1,710 @@
+{
+  "Id": "63345606-bdaf-4953-b194-bb15a38bd387",
+  "ProjectId": "39c934f2-476c-41dd-a278-339477387e58",
+  "Name": "Board Fill Level",
+  "Description": "This keeps track of the current board fill level",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "4e05321a-8159-4f67-995d-d7e8a590de98",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Fill State Level",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "3b537078-634c-401b-bc03-369f96832729",
+      "X": -312,
+      "Y": 346
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The fill state is 0-9%.",
+      "Id": "cbef3873-f1d8-4b62-beae-1714a9a42434",
+      "X": -111,
+      "Y": 534
+    },
+    {
+      "Text": "The fill state is 20-29%.",
+      "Id": "24292d65-fea8-4a5a-ba8a-170a0a1b86a8",
+      "X": 655,
+      "Y": 523
+    },
+    {
+      "Text": "The fill state is 40-49%.",
+      "Id": "142db029-7309-4541-a1dc-6dda49f042c9",
+      "X": 1556,
+      "Y": 523
+    },
+    {
+      "Text": "The fill state is 50-59%.",
+      "Id": "8e387ed0-9cad-4043-8ab6-65dee220b19b",
+      "X": 1939,
+      "Y": 512
+    },
+    {
+      "Text": "The fill state is 60-69%.",
+      "Id": "7ed38724-3364-4f67-8534-8710115165a2",
+      "X": 2380,
+      "Y": 518
+    },
+    {
+      "Text": "The fill state is 10-19%.",
+      "Id": "ef207e67-ff7a-4e3d-a0d0-6de206a187d5",
+      "X": 276,
+      "Y": 531
+    },
+    {
+      "Text": "The fill state is 30-39%.",
+      "Id": "41e08a6d-670a-4505-8cfa-31d686beb667",
+      "X": 1094,
+      "Y": 541
+    },
+    {
+      "Text": "The fill state is 70-79%.",
+      "Id": "bf880ebe-1683-4666-a395-9f18522f97ab",
+      "X": 2763,
+      "Y": 516
+    },
+    {
+      "Text": "The fill state is 80-89%.",
+      "Id": "6b637d1e-28e6-4b5f-88ab-e332568bea7e",
+      "X": 3117,
+      "Y": 527
+    },
+    {
+      "Text": "The fill state is 90-100%.",
+      "Id": "816afd41-3f80-4763-9aaa-0e8113ce9d8c",
+      "X": 3543,
+      "Y": 523
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.05\"}",
+      "Id": "72fe24e1-f49a-410f-a842-0d696bf2941b",
+      "X": -109,
+      "Y": 259
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.15\"}",
+      "Id": "3e45d5de-9a37-4ce1-b5c0-01f5e343dcbf",
+      "X": 266,
+      "Y": 262
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.25\"}",
+      "Id": "7e02eccf-653b-4e6f-8a8a-4cf6fb7b8697",
+      "X": 671.5284,
+      "Y": 252.90909
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.35\"}",
+      "Id": "b052cd3b-477f-413e-918d-11caf1a61d86",
+      "X": 1085,
+      "Y": 257
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.45\"}",
+      "Id": "fc4ab631-c119-443f-a600-78e457f1329b",
+      "X": 1549,
+      "Y": 249
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.55\"}",
+      "Id": "3a995fcb-8dc6-4b3c-b6b2-9f28a3c7f90c",
+      "X": 1946.151,
+      "Y": 270.5
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.65\"}",
+      "Id": "f370ebc6-180c-4283-abe9-4d75658cbbd0",
+      "X": 2381.1511,
+      "Y": 268.66666
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.75\"}",
+      "Id": "86584f90-fbea-4226-86e4-bd677e5b6e84",
+      "X": 2746.9844,
+      "Y": 288.83334
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0.85\"}",
+      "Id": "8c73d33f-1da5-47c7-8dcc-e3012dca69c5",
+      "X": 3123.9844,
+      "Y": 260
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "63345606-bdaf-4953-b194-bb15a38bd387",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"4e05321a-8159-4f67-995d-d7e8a590de98\",\"fieldName\":\"Fill State Level\",\"operator\":\"=\",\"valueChange\":\"0\"}",
+      "Id": "57f5b350-02c1-4853-92a7-f78467065750",
+      "X": 3534,
+      "Y": 260
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "24292d65-fea8-4a5a-ba8a-170a0a1b86a8",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b052cd3b-477f-413e-918d-11caf1a61d86",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "41e08a6d-670a-4505-8cfa-31d686beb667",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fc4ab631-c119-443f-a600-78e457f1329b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "142db029-7309-4541-a1dc-6dda49f042c9",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3a995fcb-8dc6-4b3c-b6b2-9f28a3c7f90c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8e387ed0-9cad-4043-8ab6-65dee220b19b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f370ebc6-180c-4283-abe9-4d75658cbbd0",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "7ed38724-3364-4f67-8534-8710115165a2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "86584f90-fbea-4226-86e4-bd677e5b6e84",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6b637d1e-28e6-4b5f-88ab-e332568bea7e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "57f5b350-02c1-4853-92a7-f78467065750",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3b537078-634c-401b-bc03-369f96832729",
+      "SourceNodePort": "output",
+      "TargetNodeId": "72fe24e1-f49a-410f-a842-0d696bf2941b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "72fe24e1-f49a-410f-a842-0d696bf2941b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "cbef3873-f1d8-4b62-beae-1714a9a42434",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 145,
+          "Y": 483
+        },
+        {
+          "X": -175,
+          "Y": 523
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "cbef3873-f1d8-4b62-beae-1714a9a42434",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3e45d5de-9a37-4ce1-b5c0-01f5e343dcbf",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3e45d5de-9a37-4ce1-b5c0-01f5e343dcbf",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ef207e67-ff7a-4e3d-a0d0-6de206a187d5",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 539,
+          "Y": 474
+        },
+        {
+          "X": 241,
+          "Y": 515
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ef207e67-ff7a-4e3d-a0d0-6de206a187d5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7e02eccf-653b-4e6f-8a8a-4cf6fb7b8697",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "7e02eccf-653b-4e6f-8a8a-4cf6fb7b8697",
+      "SourceNodePort": "output",
+      "TargetNodeId": "24292d65-fea8-4a5a-ba8a-170a0a1b86a8",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 937,
+          "Y": 471
+        },
+        {
+          "X": 679,
+          "Y": 511
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "57f5b350-02c1-4853-92a7-f78467065750",
+      "SourceNodePort": "output",
+      "TargetNodeId": "816afd41-3f80-4763-9aaa-0e8113ce9d8c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3808,
+          "Y": 484
+        },
+        {
+          "X": 3502,
+          "Y": 509
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bf880ebe-1683-4666-a395-9f18522f97ab",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8c73d33f-1da5-47c7-8dcc-e3012dca69c5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b052cd3b-477f-413e-918d-11caf1a61d86",
+      "SourceNodePort": "output",
+      "TargetNodeId": "41e08a6d-670a-4505-8cfa-31d686beb667",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1363,
+          "Y": 484
+        },
+        {
+          "X": 1088,
+          "Y": 504
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fc4ab631-c119-443f-a600-78e457f1329b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "142db029-7309-4541-a1dc-6dda49f042c9",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1804,
+          "Y": 483
+        },
+        {
+          "X": 1533,
+          "Y": 504
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3a995fcb-8dc6-4b3c-b6b2-9f28a3c7f90c",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8e387ed0-9cad-4043-8ab6-65dee220b19b",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2222,
+          "Y": 489
+        },
+        {
+          "X": 1933,
+          "Y": 510
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f370ebc6-180c-4283-abe9-4d75658cbbd0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7ed38724-3364-4f67-8534-8710115165a2",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2641,
+          "Y": 486
+        },
+        {
+          "X": 2362,
+          "Y": 508
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "86584f90-fbea-4226-86e4-bd677e5b6e84",
+      "SourceNodePort": "output",
+      "TargetNodeId": "bf880ebe-1683-4666-a395-9f18522f97ab",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3017,
+          "Y": 493
+        },
+        {
+          "X": 2720,
+          "Y": 518
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8c73d33f-1da5-47c7-8dcc-e3012dca69c5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "6b637d1e-28e6-4b5f-88ab-e332568bea7e",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3386,
+          "Y": 492
+        },
+        {
+          "X": 3102,
+          "Y": 509
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ef207e67-ff7a-4e3d-a0d0-6de206a187d5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "72fe24e1-f49a-410f-a842-0d696bf2941b",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 549,
+          "Y": 213
+        },
+        {
+          "X": -102,
+          "Y": 229
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "24292d65-fea8-4a5a-ba8a-170a0a1b86a8",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3e45d5de-9a37-4ce1-b5c0-01f5e343dcbf",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 930,
+          "Y": 223
+        },
+        {
+          "X": 252,
+          "Y": 204
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "24292d65-fea8-4a5a-ba8a-170a0a1b86a8",
+      "SourceNodePort": "output",
+      "TargetNodeId": "72fe24e1-f49a-410f-a842-0d696bf2941b",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 800,
+          "Y": 798
+        },
+        {
+          "X": -174,
+          "Y": 767
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "41e08a6d-670a-4505-8cfa-31d686beb667",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7e02eccf-653b-4e6f-8a8a-4cf6fb7b8697",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1375,
+          "Y": 220
+        },
+        {
+          "X": 721,
+          "Y": 180
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "41e08a6d-670a-4505-8cfa-31d686beb667",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3e45d5de-9a37-4ce1-b5c0-01f5e343dcbf",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1132,
+          "Y": 872
+        },
+        {
+          "X": 248,
+          "Y": 898
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "142db029-7309-4541-a1dc-6dda49f042c9",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b052cd3b-477f-413e-918d-11caf1a61d86",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1808,
+          "Y": 213
+        },
+        {
+          "X": 1125,
+          "Y": 207
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "142db029-7309-4541-a1dc-6dda49f042c9",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7e02eccf-653b-4e6f-8a8a-4cf6fb7b8697",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1814,
+          "Y": 707
+        },
+        {
+          "X": 1620,
+          "Y": 913
+        },
+        {
+          "X": 725,
+          "Y": 874
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8e387ed0-9cad-4043-8ab6-65dee220b19b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b052cd3b-477f-413e-918d-11caf1a61d86",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2061,
+          "Y": 809
+        },
+        {
+          "X": 1119,
+          "Y": 790
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8e387ed0-9cad-4043-8ab6-65dee220b19b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fc4ab631-c119-443f-a600-78e457f1329b",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2270,
+          "Y": 213
+        },
+        {
+          "X": 1628,
+          "Y": 189
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "7ed38724-3364-4f67-8534-8710115165a2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fc4ab631-c119-443f-a600-78e457f1329b",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2509,
+          "Y": 877
+        },
+        {
+          "X": 1543,
+          "Y": 895
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6b637d1e-28e6-4b5f-88ab-e332568bea7e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "86584f90-fbea-4226-86e4-bd677e5b6e84",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3426,
+          "Y": 240
+        },
+        {
+          "X": 2833,
+          "Y": 234
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6b637d1e-28e6-4b5f-88ab-e332568bea7e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f370ebc6-180c-4283-abe9-4d75658cbbd0",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3329,
+          "Y": 837
+        },
+        {
+          "X": 2393,
+          "Y": 851
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "7ed38724-3364-4f67-8534-8710115165a2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3a995fcb-8dc6-4b3c-b6b2-9f28a3c7f90c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2650,
+          "Y": 243
+        },
+        {
+          "X": 2005,
+          "Y": 235
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bf880ebe-1683-4666-a395-9f18522f97ab",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f370ebc6-180c-4283-abe9-4d75658cbbd0",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2993,
+          "Y": 272
+        },
+        {
+          "X": 2432,
+          "Y": 233
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "bf880ebe-1683-4666-a395-9f18522f97ab",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3a995fcb-8dc6-4b3c-b6b2-9f28a3c7f90c",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2997,
+          "Y": 707
+        },
+        {
+          "X": 1988,
+          "Y": 824
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-17T15:12:55.9535716+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

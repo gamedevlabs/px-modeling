@@ -1,0 +1,25 @@
+{
+  "Id": "c0c995a2-0c4c-4311-8137-deb831565cd4",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "Softlocked",
+  "Description": "Due to the game's logic, the player can not accept any more quests. ",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "b470c056-ecce-4cf1-92ed-10d60c247842",
+      "X": 294,
+      "Y": 286
+    }
+  ],
+  "Text": [],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-16T08:54:46.3233996+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

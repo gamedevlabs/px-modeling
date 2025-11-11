@@ -1,0 +1,87 @@
+{
+  "Id": "8b4a0f2e-962a-46ab-9aa8-fe9fa47b8bd3",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Has Completed Clubman Stage Route 5 State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "8e984507-507f-44e5-8a2a-661a282734dd",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Has Completed Clubman Stage Route 5",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "ce10c6cd-03dc-461d-9114-15d4e368e05e",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet completed the race.",
+      "Id": "2cc52ca2-39f5-4c03-be66-72be5076f3da",
+      "X": 188,
+      "Y": 301
+    },
+    {
+      "Text": "The player has won the race.",
+      "Id": "01b9b12b-b0f3-4b19-bbd6-f3d5adbb5a7e",
+      "X": 841,
+      "Y": 292
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "8b4a0f2e-962a-46ab-9aa8-fe9fa47b8bd3",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"8e984507-507f-44e5-8a2a-661a282734dd\",\"fieldName\":\"Has Completed Clubman Stage Route 5\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "80a9c283-bfbb-4784-a18b-3776722ce707",
+      "X": 521,
+      "Y": 254
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "2cc52ca2-39f5-4c03-be66-72be5076f3da",
+      "SourceNodePort": "output",
+      "TargetNodeId": "80a9c283-bfbb-4784-a18b-3776722ce707",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "80a9c283-bfbb-4784-a18b-3776722ce707",
+      "SourceNodePort": "output",
+      "TargetNodeId": "01b9b12b-b0f3-4b19-bbd6-f3d5adbb5a7e",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ce10c6cd-03dc-461d-9114-15d4e368e05e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2cc52ca2-39f5-4c03-be66-72be5076f3da",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:45:53.2556172+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

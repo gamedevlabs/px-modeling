@@ -1,0 +1,171 @@
+{
+  "Id": "b34f4ec6-4317-434e-bb98-ba78076093e0",
+  "ProjectId": "77aa0998-1fa8-4383-99fc-3706e1dffc73",
+  "Name": "Player Height State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "62fd77a7-61b4-45f6-b725-f23909056a95",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Player State",
+      "Value": "1",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "4ff18a31-4145-47c9-9949-f86f08fa5cb7",
+      "X": -292,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player is in small state",
+      "Id": "07223329-c5cb-46a7-b8a3-2d6a6bb0b0e7",
+      "X": 219,
+      "Y": 304
+    },
+    {
+      "Text": "The player is in big state",
+      "Id": "c5fb314c-6533-4a95-b16e-16d5086a7ce3",
+      "X": 873,
+      "Y": 305
+    },
+    {
+      "Text": "The player is in flower state",
+      "Id": "24e1f91b-2e02-4ed0-adb9-e78347c5cae7",
+      "X": 1521,
+      "Y": 304
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "b34f4ec6-4317-434e-bb98-ba78076093e0",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"62fd77a7-61b4-45f6-b725-f23909056a95\",\"fieldName\":\"Player State\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "a002af10-2e31-4747-b1f5-19b694215656",
+      "X": 557,
+      "Y": 276
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "b34f4ec6-4317-434e-bb98-ba78076093e0",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"62fd77a7-61b4-45f6-b725-f23909056a95\",\"fieldName\":\"Player State\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "1034452e-065f-47bf-ae6c-1f563196f8b3",
+      "X": 1198,
+      "Y": 278
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "b34f4ec6-4317-434e-bb98-ba78076093e0",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"62fd77a7-61b4-45f6-b725-f23909056a95\",\"fieldName\":\"Player State\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "b367a51d-3423-48ee-830b-c1466d4ab506",
+      "X": -99,
+      "Y": 279
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "07223329-c5cb-46a7-b8a3-2d6a6bb0b0e7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a002af10-2e31-4747-b1f5-19b694215656",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a002af10-2e31-4747-b1f5-19b694215656",
+      "SourceNodePort": "output",
+      "TargetNodeId": "c5fb314c-6533-4a95-b16e-16d5086a7ce3",
+      "TargetNodePort": "input",
+      "Vertices": [],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c5fb314c-6533-4a95-b16e-16d5086a7ce3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "1034452e-065f-47bf-ae6c-1f563196f8b3",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "1034452e-065f-47bf-ae6c-1f563196f8b3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "24e1f91b-2e02-4ed0-adb9-e78347c5cae7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "24e1f91b-2e02-4ed0-adb9-e78347c5cae7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a002af10-2e31-4747-b1f5-19b694215656",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1655,
+          "Y": 498
+        },
+        {
+          "X": 680,
+          "Y": 506
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "4ff18a31-4145-47c9-9949-f86f08fa5cb7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b367a51d-3423-48ee-830b-c1466d4ab506",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b367a51d-3423-48ee-830b-c1466d4ab506",
+      "SourceNodePort": "output",
+      "TargetNodeId": "07223329-c5cb-46a7-b8a3-2d6a6bb0b0e7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c5fb314c-6533-4a95-b16e-16d5086a7ce3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b367a51d-3423-48ee-830b-c1466d4ab506",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 956,
+          "Y": 227
+        },
+        {
+          "X": -35,
+          "Y": 200
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-08T12:33:04.817145+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

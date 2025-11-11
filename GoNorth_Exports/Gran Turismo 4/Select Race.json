@@ -1,0 +1,54 @@
+{
+  "Id": "1c4cf957-edfd-47ca-9ba3-6d70741253a2",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Select Race",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "f9e04a12-d959-49d8-b4ef-3e8eb7d62c04",
+      "FieldType": 3,
+      "CreatedFromTemplate": false,
+      "Name": "Selected Race",
+      "Value": "Autumn Ring",
+      "AdditionalConfiguration": "[\"Autumn Ring\",\"Beginner Course\",\"High Speed Ring\",\"Clubman Stage Route 5\",\"Twin Ring Motegi West Short Course\"]",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "640a9d35-1a26-42e0-976b-9c02e3f278c3",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player selects a race (as set in variable Selected Race)",
+      "Id": "4fb0a76b-7350-496b-8c22-1a72cda70ca8",
+      "X": 295,
+      "Y": 299
+    }
+  ],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "640a9d35-1a26-42e0-976b-9c02e3f278c3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "4fb0a76b-7350-496b-8c22-1a72cda70ca8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T20:05:48.0009291+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

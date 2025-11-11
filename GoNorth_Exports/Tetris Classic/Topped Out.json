@@ -1,0 +1,87 @@
+{
+  "Id": "864e3e20-bede-4858-80f4-901445f08c81",
+  "ProjectId": "39c934f2-476c-41dd-a278-339477387e58",
+  "Name": "Topped Out",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "97c311e3-ea3c-4ab4-a61d-b751944c24b9",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Is Topped Out",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "f97c88c5-981d-4ab0-968d-ac2991879326",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet topped out.",
+      "Id": "e8001363-e0c5-4eab-aa29-f80db67f54f0",
+      "X": 253,
+      "Y": 294
+    },
+    {
+      "Text": "The player topped out",
+      "Id": "942d47c8-6cf5-4d09-8c95-7fba8424b637",
+      "X": 1003,
+      "Y": 295
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "864e3e20-bede-4858-80f4-901445f08c81",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"97c311e3-ea3c-4ab4-a61d-b751944c24b9\",\"fieldName\":\"Is Topped Out\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "c1e7246a-f887-4552-a051-f1341b500e98",
+      "X": 637,
+      "Y": 274
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "f97c88c5-981d-4ab0-968d-ac2991879326",
+      "SourceNodePort": "output",
+      "TargetNodeId": "e8001363-e0c5-4eab-aa29-f80db67f54f0",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e8001363-e0c5-4eab-aa29-f80db67f54f0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "c1e7246a-f887-4552-a051-f1341b500e98",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c1e7246a-f887-4552-a051-f1341b500e98",
+      "SourceNodePort": "output",
+      "TargetNodeId": "942d47c8-6cf5-4d09-8c95-7fba8424b637",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-17T14:37:12.1269039+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

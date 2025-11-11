@@ -1,0 +1,318 @@
+{
+  "Id": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Player Position",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "924aa30a-f0c0-4a5b-8324-192c77762fe6",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Player Position",
+      "Value": "6",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "83b5d444-5494-4a7b-9dd2-8dfd38bb84b1",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player is in sixth position",
+      "Id": "1ea9491c-3a29-4be9-bfd6-be299e79e034",
+      "X": 474,
+      "Y": 278
+    },
+    {
+      "Text": "The player is in fifth position",
+      "Id": "f8335c5c-0ceb-49e1-bab2-91d4ca6d782a",
+      "X": 1117,
+      "Y": 270
+    },
+    {
+      "Text": "The player is in fourth position",
+      "Id": "0764b742-0fcc-46bd-ba68-9c54ac9d44fe",
+      "X": 1874,
+      "Y": 263
+    },
+    {
+      "Text": "The player is in third position",
+      "Id": "32d292f6-53cd-49db-b1f5-151a9adec232",
+      "X": 2634,
+      "Y": 238
+    },
+    {
+      "Text": "The player is in second position",
+      "Id": "3c0ee268-7886-425f-bdfb-0d664106e642",
+      "X": 3383,
+      "Y": 203
+    },
+    {
+      "Text": "The player is in first position",
+      "Id": "ff3554d3-365f-4bc4-885b-600c5b39ea71",
+      "X": 4083,
+      "Y": 219
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"5\"}",
+      "Id": "272a2cba-c998-4583-a7d0-91cdb27c9f57",
+      "X": 783,
+      "Y": 251
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"6\"}",
+      "Id": "b8369f7f-f747-49bd-9557-cef7357f2fb2",
+      "X": 174,
+      "Y": 271
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"4\"}",
+      "Id": "72a54ea5-67df-43e9-a834-3ac09561049f",
+      "X": 1498.4766,
+      "Y": 258.25
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "2feaf954-d6f6-4f04-a9e9-e7c79eac8ffb",
+      "X": 2256,
+      "Y": 202
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "8e1bc146-b26e-4e12-8115-d9304df134c7",
+      "X": 3006,
+      "Y": 189
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "3bc45f79-9f95-4ebe-8045-1b5eaf913f7c",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"924aa30a-f0c0-4a5b-8324-192c77762fe6\",\"fieldName\":\"Player Position\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "3e277fbf-885e-473b-8355-f855c68edfdb",
+      "X": 3747,
+      "Y": 207
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "83b5d444-5494-4a7b-9dd2-8dfd38bb84b1",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b8369f7f-f747-49bd-9557-cef7357f2fb2",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b8369f7f-f747-49bd-9557-cef7357f2fb2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "1ea9491c-3a29-4be9-bfd6-be299e79e034",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "1ea9491c-3a29-4be9-bfd6-be299e79e034",
+      "SourceNodePort": "output",
+      "TargetNodeId": "272a2cba-c998-4583-a7d0-91cdb27c9f57",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "272a2cba-c998-4583-a7d0-91cdb27c9f57",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f8335c5c-0ceb-49e1-bab2-91d4ca6d782a",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f8335c5c-0ceb-49e1-bab2-91d4ca6d782a",
+      "SourceNodePort": "output",
+      "TargetNodeId": "72a54ea5-67df-43e9-a834-3ac09561049f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "72a54ea5-67df-43e9-a834-3ac09561049f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0764b742-0fcc-46bd-ba68-9c54ac9d44fe",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3c0ee268-7886-425f-bdfb-0d664106e642",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3e277fbf-885e-473b-8355-f855c68edfdb",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3e277fbf-885e-473b-8355-f855c68edfdb",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ff3554d3-365f-4bc4-885b-600c5b39ea71",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8e1bc146-b26e-4e12-8115-d9304df134c7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3c0ee268-7886-425f-bdfb-0d664106e642",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "32d292f6-53cd-49db-b1f5-151a9adec232",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8e1bc146-b26e-4e12-8115-d9304df134c7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2feaf954-d6f6-4f04-a9e9-e7c79eac8ffb",
+      "SourceNodePort": "output",
+      "TargetNodeId": "32d292f6-53cd-49db-b1f5-151a9adec232",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0764b742-0fcc-46bd-ba68-9c54ac9d44fe",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2feaf954-d6f6-4f04-a9e9-e7c79eac8ffb",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f8335c5c-0ceb-49e1-bab2-91d4ca6d782a",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b8369f7f-f747-49bd-9557-cef7357f2fb2",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1260,
+          "Y": 236
+        },
+        {
+          "X": 213,
+          "Y": 239
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0764b742-0fcc-46bd-ba68-9c54ac9d44fe",
+      "SourceNodePort": "output",
+      "TargetNodeId": "272a2cba-c998-4583-a7d0-91cdb27c9f57",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2054,
+          "Y": 480
+        },
+        {
+          "X": 934,
+          "Y": 512
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "32d292f6-53cd-49db-b1f5-151a9adec232",
+      "SourceNodePort": "output",
+      "TargetNodeId": "72a54ea5-67df-43e9-a834-3ac09561049f",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2744,
+          "Y": 187
+        },
+        {
+          "X": 1669,
+          "Y": 195
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3c0ee268-7886-425f-bdfb-0d664106e642",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2feaf954-d6f6-4f04-a9e9-e7c79eac8ffb",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3477,
+          "Y": 439
+        },
+        {
+          "X": 2420,
+          "Y": 461
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ff3554d3-365f-4bc4-885b-600c5b39ea71",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8e1bc146-b26e-4e12-8115-d9304df134c7",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 4342,
+          "Y": 159
+        },
+        {
+          "X": 3164,
+          "Y": 150
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:29:52.2052315+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

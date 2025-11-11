@@ -1,0 +1,42 @@
+{
+  "Id": "45918a4c-0c8a-4309-95b9-0660a37a10e1",
+  "ProjectId": "fef2183e-a56e-4f16-8ac1-e048a1e20c13",
+  "Name": "Mission III — Departure for the Promised Land",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "5f678246-04c8-4ad0-93c2-cb19e89fd278",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Mission III Complete",
+      "Color": "#FFFFFF",
+      "Id": "c82d9a55-7b3c-44ab-bc7a-64a0c1f78cc6",
+      "X": 234,
+      "Y": 297
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "5f678246-04c8-4ad0-93c2-cb19e89fd278",
+      "SourceNodePort": "output",
+      "TargetNodeId": "c82d9a55-7b3c-44ab-bc7a-64a0c1f78cc6",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-07T17:37:18.6852025+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

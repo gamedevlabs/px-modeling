@@ -1,0 +1,140 @@
+{
+  "Id": "88a9073c-adb8-4fff-a538-67e8af1e5755",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "Among Crates and Shelves",
+  "Description": "In this mission, the player has to click on the warehouse in order to get information on the current stock levels.",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "73d4f9a4-8612-457b-9b4e-4cf62d3fe81f",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player selects the warehouse.",
+      "Id": "2875ac4a-47c2-4a65-babc-cfd4004f13bc",
+      "X": 206,
+      "Y": 302
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "7188bd36-7561-4fc2-bcf2-91b79e302b8e"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"144a0453-2c04-4273-9fc2-b70952dc90be\",\"fieldName\":\"Number of Lumberjack's huts\",\"operator\":\"<\",\"compareValue\":\"2\",\"selectedObjectId\":\"7188bd36-7561-4fc2-bcf2-91b79e302b8e\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "a0238753-119b-4999-ba62-2340a0e7d444",
+      "X": 540,
+      "Y": 286
+    },
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1479abe4-ca33-47cb-93be-f78fe02e75c8"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"50d47354-aed5-4cd7-8ff0-afc57ba4719d\",\"fieldName\":\"Number of Fisherman's Huts\",\"operator\":\"<\",\"compareValue\":\"1\",\"selectedObjectId\":\"1479abe4-ca33-47cb-93be-f78fe02e75c8\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "5a3c769d-10f3-4170-98d6-970b9a9ddc0f",
+      "X": 1002,
+      "Y": 394
+    }
+  ],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "At least two lumberjack's huts",
+      "Color": "#008800",
+      "Id": "4eb73563-62cc-466a-abaa-9b32c0ef601a",
+      "X": 1425,
+      "Y": 336
+    },
+    {
+      "Name": "Less than two lumberjack's huts",
+      "Color": "#FFFFFF",
+      "Id": "5c5ede77-d672-4e4c-a59e-08b8631b4fd5",
+      "X": 998,
+      "Y": 200
+    },
+    {
+      "Name": "At least two lumberjack's huts and at least one fisherman's hut",
+      "Color": "#0000CC",
+      "Id": "a63a5b9a-4770-473a-b690-c68ec2c6e13d",
+      "X": 1430,
+      "Y": 542
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "73d4f9a4-8612-457b-9b4e-4cf62d3fe81f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2875ac4a-47c2-4a65-babc-cfd4004f13bc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2875ac4a-47c2-4a65-babc-cfd4004f13bc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a0238753-119b-4999-ba62-2340a0e7d444",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a0238753-119b-4999-ba62-2340a0e7d444",
+      "SourceNodePort": "else",
+      "TargetNodeId": "5a3c769d-10f3-4170-98d6-970b9a9ddc0f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "5a3c769d-10f3-4170-98d6-970b9a9ddc0f",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "4eb73563-62cc-466a-abaa-9b32c0ef601a",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a0238753-119b-4999-ba62-2340a0e7d444",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "5c5ede77-d672-4e4c-a59e-08b8631b4fd5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "5a3c769d-10f3-4170-98d6-970b9a9ddc0f",
+      "SourceNodePort": "else",
+      "TargetNodeId": "a63a5b9a-4770-473a-b690-c68ec2c6e13d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T15:03:14.1280076+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

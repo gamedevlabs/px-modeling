@@ -1,0 +1,89 @@
+{
+  "Id": "4534c28f-86c9-424c-af7d-602b0949be17",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "Safe as Houses",
+  "Description": "The player is tasked with building three peasant buildings, slowly growing their settlement.",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "c5bce2b7-58b3-4075-ba46-34aedc3484f4",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Number of Houses Built",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "b7c00457-d3ab-49cc-bd45-b2689e34cee3",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player builds three houses",
+      "Id": "cbe9a6bd-8507-41d8-95c5-98766fdac339",
+      "X": 203,
+      "Y": 298
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "4534c28f-86c9-424c-af7d-602b0949be17",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"c5bce2b7-58b3-4075-ba46-34aedc3484f4\",\"fieldName\":\"Number of Houses Built\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "63f6c143-1302-42ee-a045-5347df58825e",
+      "X": 530,
+      "Y": 275
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Complete Safe as Houses",
+      "Color": "#FFFFFF",
+      "Id": "15ffcf64-69c9-4547-b7d2-ca61ef099a99",
+      "X": 859,
+      "Y": 303
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "b7c00457-d3ab-49cc-bd45-b2689e34cee3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "cbe9a6bd-8507-41d8-95c5-98766fdac339",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "cbe9a6bd-8507-41d8-95c5-98766fdac339",
+      "SourceNodePort": "output",
+      "TargetNodeId": "63f6c143-1302-42ee-a045-5347df58825e",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "63f6c143-1302-42ee-a045-5347df58825e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "15ffcf64-69c9-4547-b7d2-ca61ef099a99",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:41:51.7035284+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

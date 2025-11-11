@@ -1,0 +1,89 @@
+{
+  "Id": "1479abe4-ca33-47cb-93be-f78fe02e75c8",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "War on hunger",
+  "Description": "The population might become hungry, as there are no fisherman's huts in Falconstone! Lord Richard Northburgh tasks the player with constructing one on Falconstone's beach. ",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "50d47354-aed5-4cd7-8ff0-afc57ba4719d",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Number of Fisherman's Huts",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "c5323823-0139-4865-bb0b-1c0b7c9f8128",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player builds a fisherman's hut.",
+      "Id": "15d67987-3d56-4bd4-ba34-0a3eaafff656",
+      "X": 194,
+      "Y": 302
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "1479abe4-ca33-47cb-93be-f78fe02e75c8",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"50d47354-aed5-4cd7-8ff0-afc57ba4719d\",\"fieldName\":\"Number of Fisherman's Huts\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "15854e9b-3aae-4080-a46c-7c411d961798",
+      "X": 518,
+      "Y": 279
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "636ed290-b69a-45f2-b8d0-29a58d86a285",
+      "X": 843,
+      "Y": 308
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "c5323823-0139-4865-bb0b-1c0b7c9f8128",
+      "SourceNodePort": "output",
+      "TargetNodeId": "15d67987-3d56-4bd4-ba34-0a3eaafff656",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "15d67987-3d56-4bd4-ba34-0a3eaafff656",
+      "SourceNodePort": "output",
+      "TargetNodeId": "15854e9b-3aae-4080-a46c-7c411d961798",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "15854e9b-3aae-4080-a46c-7c411d961798",
+      "SourceNodePort": "output",
+      "TargetNodeId": "636ed290-b69a-45f2-b8d0-29a58d86a285",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:44:41.1902982+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

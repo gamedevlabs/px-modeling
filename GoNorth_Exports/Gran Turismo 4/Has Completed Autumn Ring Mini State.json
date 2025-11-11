@@ -1,0 +1,87 @@
+{
+  "Id": "701bb9ef-1264-4327-be2d-21931a2d4716",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Has Completed Autumn Ring Mini State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "e10eac97-ccc3-4410-b6ef-02532130124d",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Has Completed Autumn Ring Mini",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "a0e3468c-1861-4014-94d0-c7f2b2a37f0e",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet completed the race.",
+      "Id": "7b6b1459-cb8f-432c-a5ff-acbb762e76ee",
+      "X": 212,
+      "Y": 291
+    },
+    {
+      "Text": "The player has won the race.",
+      "Id": "0a0f5636-312b-4dc4-a2f3-f296acde00d8",
+      "X": 876,
+      "Y": 272
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "701bb9ef-1264-4327-be2d-21931a2d4716",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"e10eac97-ccc3-4410-b6ef-02532130124d\",\"fieldName\":\"Has Completed Beginner Course\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "5154f90f-6f6d-46b3-96e9-e0d8697ce483",
+      "X": 535,
+      "Y": 256
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "7b6b1459-cb8f-432c-a5ff-acbb762e76ee",
+      "SourceNodePort": "output",
+      "TargetNodeId": "5154f90f-6f6d-46b3-96e9-e0d8697ce483",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "5154f90f-6f6d-46b3-96e9-e0d8697ce483",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0a0f5636-312b-4dc4-a2f3-f296acde00d8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a0e3468c-1861-4014-94d0-c7f2b2a37f0e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7b6b1459-cb8f-432c-a5ff-acbb762e76ee",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T20:01:05.4741957+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

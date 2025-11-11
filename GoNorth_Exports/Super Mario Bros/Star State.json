@@ -1,0 +1,122 @@
+{
+  "Id": "b4358ea4-645b-4d62-9b2f-519993ca3cac",
+  "ProjectId": "77aa0998-1fa8-4383-99fc-3706e1dffc73",
+  "Name": "Star State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "45ab53ed-b10a-4f42-8b97-ce6621d55858",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Is In Star State",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "1f47e325-c950-45c9-bcbf-83d0a74e467b",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player is not in a star state.",
+      "Id": "cb553abf-210e-4d4c-87f7-733243e052e8",
+      "X": 481,
+      "Y": 291
+    },
+    {
+      "Text": "The player is in a star state.",
+      "Id": "2fabd8b7-9e2c-4699-8f8a-4122b779a7d4",
+      "X": 1137,
+      "Y": 293
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "b4358ea4-645b-4d62-9b2f-519993ca3cac",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"45ab53ed-b10a-4f42-8b97-ce6621d55858\",\"fieldName\":\"Is In Star State\",\"operator\":\"=\",\"valueChange\":\"0\"}",
+      "Id": "8dbd9da9-f849-4349-b6f4-9e9a54c9cbb0",
+      "X": 159,
+      "Y": 434
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "b4358ea4-645b-4d62-9b2f-519993ca3cac",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"45ab53ed-b10a-4f42-8b97-ce6621d55858\",\"fieldName\":\"Is In Star State\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "a03e0bfc-54d8-41f9-b300-6bbbb383a7db",
+      "X": 797,
+      "Y": 270
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "1f47e325-c950-45c9-bcbf-83d0a74e467b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "cb553abf-210e-4d4c-87f7-733243e052e8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a03e0bfc-54d8-41f9-b300-6bbbb383a7db",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2fabd8b7-9e2c-4699-8f8a-4122b779a7d4",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "cb553abf-210e-4d4c-87f7-733243e052e8",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a03e0bfc-54d8-41f9-b300-6bbbb383a7db",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "8dbd9da9-f849-4349-b6f4-9e9a54c9cbb0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "cb553abf-210e-4d4c-87f7-733243e052e8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2fabd8b7-9e2c-4699-8f8a-4122b779a7d4",
+      "SourceNodePort": "output",
+      "TargetNodeId": "8dbd9da9-f849-4349-b6f4-9e9a54c9cbb0",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1301,
+          "Y": 651
+        },
+        {
+          "X": 226,
+          "Y": 665
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-08T12:35:32.3362359+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

@@ -1,0 +1,215 @@
+{
+  "Id": "21675dce-0a0f-4430-b0d7-fb158e82e0f4",
+  "ProjectId": "39c934f2-476c-41dd-a278-339477387e58",
+  "Name": "Gameplay Actions",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "1914660c-def3-4d8d-87bb-f0640bf25dca",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player places a tetromino.",
+      "Id": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "X": 274,
+      "Y": 298
+    },
+    {
+      "Text": "The player tops out, the game stops.",
+      "Id": "862be2c7-a7b4-42ce-a5a7-e21276719dd5",
+      "X": 676,
+      "Y": 87
+    },
+    {
+      "Text": "The player neither tops out nor finishes a line.",
+      "Id": "c8b10b10-ca50-40bb-81ee-5cfaf8026e6f",
+      "X": 672,
+      "Y": 273
+    },
+    {
+      "Text": "The player finishes at least one line.",
+      "Id": "e994b805-b16f-4017-8979-814ee37857d7",
+      "X": 682,
+      "Y": 484
+    },
+    {
+      "Text": "The fill level stays the same.",
+      "Id": "4edfb3c4-b892-4235-8cce-c0e15f487e1d",
+      "X": 1108,
+      "Y": 320
+    },
+    {
+      "Text": "The fill level increases by one stage.",
+      "Id": "a216b5a3-f14c-4a27-a625-97ac477e35ab",
+      "X": 1104,
+      "Y": 107
+    },
+    {
+      "Text": "The fill level decreases by one stage.",
+      "Id": "a8f6ce0d-5126-422b-ae11-e33803fdbee7",
+      "X": 1123,
+      "Y": 521
+    },
+    {
+      "Text": "The fill level decreases by two stages.",
+      "Id": "d646c5e9-18d2-4bae-aff1-ecf94837173d",
+      "X": 1127,
+      "Y": 733
+    }
+  ],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "1914660c-def3-4d8d-87bb-f0640bf25dca",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "862be2c7-a7b4-42ce-a5a7-e21276719dd5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "c8b10b10-ca50-40bb-81ee-5cfaf8026e6f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "e994b805-b16f-4017-8979-814ee37857d7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c8b10b10-ca50-40bb-81ee-5cfaf8026e6f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a216b5a3-f14c-4a27-a625-97ac477e35ab",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c8b10b10-ca50-40bb-81ee-5cfaf8026e6f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "4edfb3c4-b892-4235-8cce-c0e15f487e1d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e994b805-b16f-4017-8979-814ee37857d7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "4edfb3c4-b892-4235-8cce-c0e15f487e1d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e994b805-b16f-4017-8979-814ee37857d7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a8f6ce0d-5126-422b-ae11-e33803fdbee7",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e994b805-b16f-4017-8979-814ee37857d7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "d646c5e9-18d2-4bae-aff1-ecf94837173d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a216b5a3-f14c-4a27-a625-97ac477e35ab",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1280,
+          "Y": 0
+        },
+        {
+          "X": 232,
+          "Y": 183
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "4edfb3c4-b892-4235-8cce-c0e15f487e1d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1384,
+          "Y": -69
+        },
+        {
+          "X": 139,
+          "Y": 169
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a8f6ce0d-5126-422b-ae11-e33803fdbee7",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1468,
+          "Y": 1011
+        },
+        {
+          "X": 142,
+          "Y": 819
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "d646c5e9-18d2-4bae-aff1-ecf94837173d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aa01b247-0925-43cf-9e80-4704700ca3bc",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1350,
+          "Y": 951
+        },
+        {
+          "X": 218,
+          "Y": 786
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-17T15:08:30.1526147+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

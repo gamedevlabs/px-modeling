@@ -1,0 +1,131 @@
+{
+  "Id": "7188bd36-7561-4fc2-bcf2-91b79e302b8e",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "The essential Building material",
+  "Description": "Building houses requires wood and currently, the island does not cut down any trees! Lord Richard Northburgh therefore tasks the player with constructing two lumberjacks, emphasizing the need to connect the lumberjacks to a warehouse in order to collect the goods.",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "144a0453-2c04-4273-9fc2-b70952dc90be",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Number of Lumberjack's huts",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "ad35fe1f-33c1-4f36-8b21-ab14abb59fcf",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player builds two lumberjack's huts.",
+      "Id": "ce2f3d5a-5084-47d9-b3dc-802cece56e4e",
+      "X": 180,
+      "Y": 298
+    }
+  ],
+  "Condition": [
+    {
+      "Conditions": [
+        {
+          "Id": 0,
+          "DependsOnObjects": [
+            {
+              "ObjectType": "Quest",
+              "ObjectId": "1479abe4-ca33-47cb-93be-f78fe02e75c8"
+            }
+          ],
+          "ConditionElements": "[{\"conditionType\":7,\"conditionData\":{\"fieldId\":\"50d47354-aed5-4cd7-8ff0-afc57ba4719d\",\"fieldName\":\"Number of Fisherman's Huts\",\"operator\":\"<\",\"compareValue\":\"1\",\"selectedObjectId\":\"1479abe4-ca33-47cb-93be-f78fe02e75c8\"}}]"
+        }
+      ],
+      "CurrentConditionId": 1,
+      "Id": "91ebb9fc-d90d-4a79-a99c-8d95fe9ed27e",
+      "X": 818,
+      "Y": 280
+    }
+  ],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "7188bd36-7561-4fc2-bcf2-91b79e302b8e",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"144a0453-2c04-4273-9fc2-b70952dc90be\",\"fieldName\":\"Number of Lumberjack's huts\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "5b8c05c1-4b70-4960-8b4f-47cb7906219f",
+      "X": 501,
+      "Y": 273
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "No fisherman's huts",
+      "Color": "#FFFFFF",
+      "Id": "f6a8fff0-e96a-4fdd-b770-1330ce8344b9",
+      "X": 1244,
+      "Y": 202
+    },
+    {
+      "Name": "At least one fisherman's hut",
+      "Color": "#008800",
+      "Id": "b05cfe70-9fff-48c3-b521-78f56022988b",
+      "X": 1250,
+      "Y": 387
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "ce2f3d5a-5084-47d9-b3dc-802cece56e4e",
+      "SourceNodePort": "output",
+      "TargetNodeId": "5b8c05c1-4b70-4960-8b4f-47cb7906219f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "91ebb9fc-d90d-4a79-a99c-8d95fe9ed27e",
+      "SourceNodePort": "condition0",
+      "TargetNodeId": "f6a8fff0-e96a-4fdd-b770-1330ce8344b9",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "91ebb9fc-d90d-4a79-a99c-8d95fe9ed27e",
+      "SourceNodePort": "else",
+      "TargetNodeId": "b05cfe70-9fff-48c3-b521-78f56022988b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "5b8c05c1-4b70-4960-8b4f-47cb7906219f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "91ebb9fc-d90d-4a79-a99c-8d95fe9ed27e",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ad35fe1f-33c1-4f36-8b21-ab14abb59fcf",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ce2f3d5a-5084-47d9-b3dc-802cece56e4e",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:44:13.5036382+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

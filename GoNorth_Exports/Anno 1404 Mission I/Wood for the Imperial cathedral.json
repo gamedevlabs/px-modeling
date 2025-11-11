@@ -1,0 +1,57 @@
+{
+  "Id": "0b340fb5-888b-4166-8528-fab3fd7bbd84",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "Wood for the Imperial cathedral",
+  "Description": "Lord Richard Northburgh is short on wood and notices the woodcutters on the player's island. He therefore asks the player to assist him and provide 10t of wood for the next step of building the Imperial cathedral.",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "55d3e071-9983-4a09-8e09-5a67cd1f7e1d",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player gives Lord Richard Northburgh 10t of wood.",
+      "Id": "1bd7a690-56e8-4e93-8f36-266dc4afa544",
+      "X": 191,
+      "Y": 300
+    }
+  ],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "0545dc05-1f1a-4106-b6bb-5c198c9bff3a",
+      "X": 511,
+      "Y": 301
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "55d3e071-9983-4a09-8e09-5a67cd1f7e1d",
+      "SourceNodePort": "output",
+      "TargetNodeId": "1bd7a690-56e8-4e93-8f36-266dc4afa544",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "1bd7a690-56e8-4e93-8f36-266dc4afa544",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0545dc05-1f1a-4106-b6bb-5c198c9bff3a",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:45:27.3325739+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

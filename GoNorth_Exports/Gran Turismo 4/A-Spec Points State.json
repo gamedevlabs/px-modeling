@@ -1,0 +1,169 @@
+{
+  "Id": "8986dc7f-ae1b-47d9-a863-f1a14fe0aaea",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "A-Spec Points State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "29b2785a-eaa5-405c-9eaa-404cb27a8c8d",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "A-Spec Points",
+      "Value": "25",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "c124e7d8-3fb8-42d2-8f1d-63838a955907",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The race is easy",
+      "Id": "b3195a70-c0b9-42f2-a356-fca9f7327346",
+      "X": 657,
+      "Y": 68
+    },
+    {
+      "Text": "The race is medium-easy",
+      "Id": "89034ef7-ebbb-41ed-906a-390674c71969",
+      "X": 651,
+      "Y": 295
+    },
+    {
+      "Text": "The race is medium-hard",
+      "Id": "ccfef5af-6810-4c5b-808f-2db86bcc51aa",
+      "X": 655,
+      "Y": 582
+    },
+    {
+      "Text": "The race is hard",
+      "Id": "058e15f0-f474-484e-98f6-ac937ee57d9c",
+      "X": 631,
+      "Y": 844
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "8986dc7f-ae1b-47d9-a863-f1a14fe0aaea",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"29b2785a-eaa5-405c-9eaa-404cb27a8c8d\",\"fieldName\":\"A-Spec Points\",\"operator\":\"=\",\"valueChange\":\"25\"}",
+      "Id": "0af75b38-7aba-4ee5-bc00-b7f0ed61572b",
+      "X": 291,
+      "Y": 43
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "8986dc7f-ae1b-47d9-a863-f1a14fe0aaea",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"29b2785a-eaa5-405c-9eaa-404cb27a8c8d\",\"fieldName\":\"A-Spec Points\",\"operator\":\"=\",\"valueChange\":\"75\"}",
+      "Id": "a0dcde4c-7a30-476c-acc3-5b32f384e17a",
+      "X": 283,
+      "Y": 313
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "8986dc7f-ae1b-47d9-a863-f1a14fe0aaea",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"29b2785a-eaa5-405c-9eaa-404cb27a8c8d\",\"fieldName\":\"A-Spec Points\",\"operator\":\"=\",\"valueChange\":\"125\"}",
+      "Id": "0366f2b6-cdea-4584-9a6f-0fb096f8e4cc",
+      "X": 271,
+      "Y": 566
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "8986dc7f-ae1b-47d9-a863-f1a14fe0aaea",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"29b2785a-eaa5-405c-9eaa-404cb27a8c8d\",\"fieldName\":\"A-Spec Points\",\"operator\":\"=\",\"valueChange\":\"175\"}",
+      "Id": "90ae7f87-48f9-4c48-8ce0-2db850f7e48b",
+      "X": 271,
+      "Y": 822
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "90ae7f87-48f9-4c48-8ce0-2db850f7e48b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "058e15f0-f474-484e-98f6-ac937ee57d9c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c124e7d8-3fb8-42d2-8f1d-63838a955907",
+      "SourceNodePort": "output",
+      "TargetNodeId": "90ae7f87-48f9-4c48-8ce0-2db850f7e48b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c124e7d8-3fb8-42d2-8f1d-63838a955907",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0366f2b6-cdea-4584-9a6f-0fb096f8e4cc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c124e7d8-3fb8-42d2-8f1d-63838a955907",
+      "SourceNodePort": "output",
+      "TargetNodeId": "a0dcde4c-7a30-476c-acc3-5b32f384e17a",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "c124e7d8-3fb8-42d2-8f1d-63838a955907",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0af75b38-7aba-4ee5-bc00-b7f0ed61572b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0af75b38-7aba-4ee5-bc00-b7f0ed61572b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b3195a70-c0b9-42f2-a356-fca9f7327346",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "a0dcde4c-7a30-476c-acc3-5b32f384e17a",
+      "SourceNodePort": "output",
+      "TargetNodeId": "89034ef7-ebbb-41ed-906a-390674c71969",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0366f2b6-cdea-4584-9a6f-0fb096f8e4cc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ccfef5af-6810-4c5b-808f-2db86bcc51aa",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T20:21:00.2228983+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

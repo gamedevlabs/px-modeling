@@ -1,0 +1,57 @@
+{
+  "Id": "356e59bc-56f3-44ba-8a1a-b3d31b6d976b",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "With Sextant and Spy-glass I",
+  "Description": "It looks like one of Lord Richard Northburgh's presents to the player went overboard when they left for Cathedral City. He asks the player to sail to the goods and collect them by clicking on it.",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "f25db72c-48d7-4d95-a306-2e47ab4f4c6a",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player picks up the flotsam with their ship.",
+      "Id": "55fd7953-499e-4490-8d49-2d6ac9302538",
+      "X": 198,
+      "Y": 303
+    }
+  ],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "6beba119-8476-4505-88b6-44d0f6dd8e5f",
+      "X": 506,
+      "Y": 309
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "f25db72c-48d7-4d95-a306-2e47ab4f4c6a",
+      "SourceNodePort": "output",
+      "TargetNodeId": "55fd7953-499e-4490-8d49-2d6ac9302538",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "55fd7953-499e-4490-8d49-2d6ac9302538",
+      "SourceNodePort": "output",
+      "TargetNodeId": "6beba119-8476-4505-88b6-44d0f6dd8e5f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:47:42.3622141+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

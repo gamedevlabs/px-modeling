@@ -1,0 +1,87 @@
+{
+  "Id": "4ce0a15b-92f6-49f0-9e64-88ad807341d0",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Has Completed High Speed Ring",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "1ccfcf45-904b-40c0-84d2-25acdfac4259",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Has Completed High Speed Ring",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "6fe54f6d-d20b-4555-91e1-37f958ff8ba3",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet completed the race.",
+      "Id": "ebaa4bdf-31c8-4c9d-95da-56f11d672932",
+      "X": 191,
+      "Y": 294
+    },
+    {
+      "Text": "The player has won the race.",
+      "Id": "b2ba0ea8-0d39-49bd-8117-fafc6315cdf9",
+      "X": 851,
+      "Y": 288
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "4ce0a15b-92f6-49f0-9e64-88ad807341d0",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"1ccfcf45-904b-40c0-84d2-25acdfac4259\",\"fieldName\":\"Has Completed High Speed Ring\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "11a7437e-2440-4f24-8da5-84364e9383a2",
+      "X": 528,
+      "Y": 270
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "6fe54f6d-d20b-4555-91e1-37f958ff8ba3",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ebaa4bdf-31c8-4c9d-95da-56f11d672932",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "ebaa4bdf-31c8-4c9d-95da-56f11d672932",
+      "SourceNodePort": "output",
+      "TargetNodeId": "11a7437e-2440-4f24-8da5-84364e9383a2",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "11a7437e-2440-4f24-8da5-84364e9383a2",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b2ba0ea8-0d39-49bd-8117-fafc6315cdf9",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:44:54.6909653+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

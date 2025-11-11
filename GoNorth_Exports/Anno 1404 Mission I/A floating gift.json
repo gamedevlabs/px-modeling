@@ -1,0 +1,57 @@
+{
+  "Id": "ea1726ce-2cb1-4fb9-8875-f05c6f8f315e",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "A floating gift",
+  "Description": "As a thank you, Lord Richard Northburgh allows the player to take control of a small trade ship provided by him. The player has to click on it in order to take control. ",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "10c46900-a50d-4ae1-bd9b-88f6541d5ec0",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player selects the small trade ship.",
+      "Id": "ce2420a2-ac28-4cfe-b750-e2cc604b963b",
+      "X": 196,
+      "Y": 302
+    }
+  ],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "01040291-180c-465d-8bc5-94dd7b712225",
+      "X": 520,
+      "Y": 302
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "ce2420a2-ac28-4cfe-b750-e2cc604b963b",
+      "SourceNodePort": "output",
+      "TargetNodeId": "01040291-180c-465d-8bc5-94dd7b712225",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "10c46900-a50d-4ae1-bd9b-88f6541d5ec0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "ce2420a2-ac28-4cfe-b750-e2cc604b963b",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:45:38.5972517+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

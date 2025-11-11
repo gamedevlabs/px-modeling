@@ -1,0 +1,42 @@
+{
+  "Id": "d1f282d5-4fc4-47db-a92a-e358a63ca789",
+  "ProjectId": "fef2183e-a56e-4f16-8ac1-e048a1e20c13",
+  "Name": "Mission IV — The Lost Children",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [],
+  "Start": [
+    {
+      "Id": "7c62560f-2038-44b7-94f7-b132ba06385c",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [],
+  "Condition": [],
+  "Action": [],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "Mission IV Complete",
+      "Color": "#FFFFFF",
+      "Id": "aea75db6-f9e3-46dd-9fd4-a77cafcd2c6d",
+      "X": 205,
+      "Y": 307
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "7c62560f-2038-44b7-94f7-b132ba06385c",
+      "SourceNodePort": "output",
+      "TargetNodeId": "aea75db6-f9e3-46dd-9fd4-a77cafcd2c6d",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-07T17:38:03.1988885+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

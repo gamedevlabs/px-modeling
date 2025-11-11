@@ -1,0 +1,87 @@
+{
+  "Id": "f7535b77-fb1e-47e0-acc1-61081438b802",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Has Completed Beginner Course State",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "bab3eaab-e3db-4fe2-b58f-c5396ea8a932",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Has Completed Beginner Course",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "0a0980ef-83d9-45c6-b98c-0d78a7364073",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player has not yet completed the race.",
+      "Id": "0eb40962-c70c-4907-8dda-bdb85c263ff4",
+      "X": 209,
+      "Y": 305
+    },
+    {
+      "Text": "The player won the race.",
+      "Id": "7370b2c2-9e18-4b27-85c3-668aa040da66",
+      "X": 883,
+      "Y": 302
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "f7535b77-fb1e-47e0-acc1-61081438b802",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"bab3eaab-e3db-4fe2-b58f-c5396ea8a932\",\"fieldName\":\"Has Completed Beginner Course\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "9fdcc151-bf8b-4a05-bb25-934a6e0e14a8",
+      "X": 544,
+      "Y": 282
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "0a0980ef-83d9-45c6-b98c-0d78a7364073",
+      "SourceNodePort": "output",
+      "TargetNodeId": "0eb40962-c70c-4907-8dda-bdb85c263ff4",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "0eb40962-c70c-4907-8dda-bdb85c263ff4",
+      "SourceNodePort": "output",
+      "TargetNodeId": "9fdcc151-bf8b-4a05-bb25-934a6e0e14a8",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "9fdcc151-bf8b-4a05-bb25-934a6e0e14a8",
+      "SourceNodePort": "output",
+      "TargetNodeId": "7370b2c2-9e18-4b27-85c3-668aa040da66",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:42:44.178596+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

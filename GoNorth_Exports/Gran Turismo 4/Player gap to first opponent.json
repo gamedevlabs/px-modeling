@@ -1,0 +1,278 @@
+{
+  "Id": "98a6c9da-330a-4551-9064-9a36b7300de2",
+  "ProjectId": "74d552d0-4216-4b47-bf80-eb276a5fac76",
+  "Name": "Player gap to first opponent",
+  "Description": "",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "a2c3be3b-2c20-446d-b211-90ce74de42b9",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Gap Category",
+      "Value": "4",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "7dda8514-59ea-4901-9cb1-976ca3f5e482",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player is around 3 seconds behind the leader",
+      "Id": "152e6e11-ea9d-4503-b995-ed390c0c6b2f",
+      "X": 1139,
+      "Y": 279
+    },
+    {
+      "Text": "The player is more than 5 seconds behind the leader",
+      "Id": "d513ba8d-0baa-4a33-aabc-654f999edf60",
+      "X": 507,
+      "Y": 292
+    },
+    {
+      "Text": "The player is close to the leader",
+      "Id": "6c07efb4-4a99-43c4-8262-8473f8cfaf36",
+      "X": 1893,
+      "Y": 266
+    },
+    {
+      "Text": "The player is only a little bit ahead of second place",
+      "Id": "f6b87ce0-34f2-411b-9fad-7bae4138fd2c",
+      "X": 2624,
+      "Y": 267
+    },
+    {
+      "Text": "The player is comfortably ahead of second place",
+      "Id": "fec0f4c3-9e04-421a-b557-5c922b1601a0",
+      "X": 3334,
+      "Y": 256
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "98a6c9da-330a-4551-9064-9a36b7300de2",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"a2c3be3b-2c20-446d-b211-90ce74de42b9\",\"fieldName\":\"Gap Category\",\"operator\":\"=\",\"valueChange\":\"4\"}",
+      "Id": "e9c982ef-d36a-462d-8c29-2b6bea7270f4",
+      "X": 846,
+      "Y": 249
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "98a6c9da-330a-4551-9064-9a36b7300de2",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"a2c3be3b-2c20-446d-b211-90ce74de42b9\",\"fieldName\":\"Gap Category\",\"operator\":\"=\",\"valueChange\":\"5\"}",
+      "Id": "3f91148b-66a7-4b5e-a599-3650dec34cba",
+      "X": 193,
+      "Y": 261
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "98a6c9da-330a-4551-9064-9a36b7300de2",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"a2c3be3b-2c20-446d-b211-90ce74de42b9\",\"fieldName\":\"Gap Category\",\"operator\":\"=\",\"valueChange\":\"3\"}",
+      "Id": "2b75ed36-bded-43c6-9f31-bbaaa3e4f085",
+      "X": 1524,
+      "Y": 233
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "98a6c9da-330a-4551-9064-9a36b7300de2",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"a2c3be3b-2c20-446d-b211-90ce74de42b9\",\"fieldName\":\"Gap Category\",\"operator\":\"=\",\"valueChange\":\"2\"}",
+      "Id": "d9c12514-e9fc-4164-bdf0-24384c4a0f94",
+      "X": 2276.7812,
+      "Y": 240
+    },
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "98a6c9da-330a-4551-9064-9a36b7300de2",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"a2c3be3b-2c20-446d-b211-90ce74de42b9\",\"fieldName\":\"Gap Category\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "4daf6f38-4033-4a50-aeeb-73bab298de82",
+      "X": 2966,
+      "Y": 233
+    }
+  ],
+  "AllDone": [],
+  "Finish": [],
+  "Link": [
+    {
+      "SourceNodeId": "7dda8514-59ea-4901-9cb1-976ca3f5e482",
+      "SourceNodePort": "output",
+      "TargetNodeId": "e9c982ef-d36a-462d-8c29-2b6bea7270f4",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 213,
+          "Y": 220
+        },
+        {
+          "X": 663,
+          "Y": 223
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e9c982ef-d36a-462d-8c29-2b6bea7270f4",
+      "SourceNodePort": "output",
+      "TargetNodeId": "152e6e11-ea9d-4503-b995-ed390c0c6b2f",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "3f91148b-66a7-4b5e-a599-3650dec34cba",
+      "SourceNodePort": "output",
+      "TargetNodeId": "d513ba8d-0baa-4a33-aabc-654f999edf60",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "d513ba8d-0baa-4a33-aabc-654f999edf60",
+      "SourceNodePort": "output",
+      "TargetNodeId": "e9c982ef-d36a-462d-8c29-2b6bea7270f4",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "2b75ed36-bded-43c6-9f31-bbaaa3e4f085",
+      "SourceNodePort": "output",
+      "TargetNodeId": "6c07efb4-4a99-43c4-8262-8473f8cfaf36",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "152e6e11-ea9d-4503-b995-ed390c0c6b2f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2b75ed36-bded-43c6-9f31-bbaaa3e4f085",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6c07efb4-4a99-43c4-8262-8473f8cfaf36",
+      "SourceNodePort": "output",
+      "TargetNodeId": "d9c12514-e9fc-4164-bdf0-24384c4a0f94",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "d9c12514-e9fc-4164-bdf0-24384c4a0f94",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f6b87ce0-34f2-411b-9fad-7bae4138fd2c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f6b87ce0-34f2-411b-9fad-7bae4138fd2c",
+      "SourceNodePort": "output",
+      "TargetNodeId": "4daf6f38-4033-4a50-aeeb-73bab298de82",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "4daf6f38-4033-4a50-aeeb-73bab298de82",
+      "SourceNodePort": "output",
+      "TargetNodeId": "fec0f4c3-9e04-421a-b557-5c922b1601a0",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "fec0f4c3-9e04-421a-b557-5c922b1601a0",
+      "SourceNodePort": "output",
+      "TargetNodeId": "d9c12514-e9fc-4164-bdf0-24384c4a0f94",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 3447,
+          "Y": 212
+        },
+        {
+          "X": 2406,
+          "Y": 212
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f6b87ce0-34f2-411b-9fad-7bae4138fd2c",
+      "SourceNodePort": "output",
+      "TargetNodeId": "2b75ed36-bded-43c6-9f31-bbaaa3e4f085",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2717,
+          "Y": 463
+        },
+        {
+          "X": 1651,
+          "Y": 460
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "6c07efb4-4a99-43c4-8262-8473f8cfaf36",
+      "SourceNodePort": "output",
+      "TargetNodeId": "e9c982ef-d36a-462d-8c29-2b6bea7270f4",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 2023,
+          "Y": 239
+        },
+        {
+          "X": 985,
+          "Y": 209
+        }
+      ],
+      "Label": null
+    },
+    {
+      "SourceNodeId": "152e6e11-ea9d-4503-b995-ed390c0c6b2f",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3f91148b-66a7-4b5e-a599-3650dec34cba",
+      "TargetNodePort": "input",
+      "Vertices": [
+        {
+          "X": 1238,
+          "Y": 488
+        },
+        {
+          "X": 311,
+          "Y": 493
+        }
+      ],
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-11-11T19:35:27.9686362+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

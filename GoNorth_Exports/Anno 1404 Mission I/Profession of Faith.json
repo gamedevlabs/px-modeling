@@ -1,0 +1,125 @@
+{
+  "Id": "c09dd344-60e1-4095-b67f-4932b57744bf",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "Profession of Faith",
+  "Description": "This is the victory condition of the mission. The player has to build a chapel with multiple peasant buildings in its influence radius.\n",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "8374e4af-6a1b-4760-a6ff-789b4040ee15",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Number of chapels",
+      "Value": "0.0",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "e0163d6f-c1f3-439f-9f62-98b4c25ec9b9",
+      "X": -306,
+      "Y": 351
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player builds a chapel",
+      "Id": "1b7bb5f8-15d3-439b-a91f-e86c544507dc",
+      "X": 168,
+      "Y": 299
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "c09dd344-60e1-4095-b67f-4932b57744bf",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"8374e4af-6a1b-4760-a6ff-789b4040ee15\",\"fieldName\":\"Number of chapels\",\"operator\":\"=\",\"valueChange\":\"1\"}",
+      "Id": "269179dc-002e-423e-b833-557c406f22a5",
+      "X": 478,
+      "Y": 278
+    },
+    {
+      "ActionType": 9,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "c09dd344-60e1-4095-b67f-4932b57744bf",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"questId\":\"c09dd344-60e1-4095-b67f-4932b57744bf\",\"questState\":\"1\"}",
+      "Id": "f5b737eb-8ea3-414d-afa5-3ab3b56c2fca",
+      "X": -139,
+      "Y": 277
+    },
+    {
+      "ActionType": 9,
+      "ActionRelatedToObjectType": "Quest",
+      "ActionRelatedToObjectId": "c09dd344-60e1-4095-b67f-4932b57744bf",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"questId\":\"c09dd344-60e1-4095-b67f-4932b57744bf\",\"questState\":\"2\"}",
+      "Id": "4afbc38d-b157-4294-bc55-d3d869e586e5",
+      "X": 786,
+      "Y": 277
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "3e16ced5-8cac-4ea9-8aee-29112f3b5ca4",
+      "X": 1098,
+      "Y": 301
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "1b7bb5f8-15d3-439b-a91f-e86c544507dc",
+      "SourceNodePort": "output",
+      "TargetNodeId": "269179dc-002e-423e-b833-557c406f22a5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "e0163d6f-c1f3-439f-9f62-98b4c25ec9b9",
+      "SourceNodePort": "output",
+      "TargetNodeId": "f5b737eb-8ea3-414d-afa5-3ab3b56c2fca",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "f5b737eb-8ea3-414d-afa5-3ab3b56c2fca",
+      "SourceNodePort": "output",
+      "TargetNodeId": "1b7bb5f8-15d3-439b-a91f-e86c544507dc",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "269179dc-002e-423e-b833-557c406f22a5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "4afbc38d-b157-4294-bc55-d3d869e586e5",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "4afbc38d-b157-4294-bc55-d3d869e586e5",
+      "SourceNodePort": "output",
+      "TargetNodeId": "3e16ced5-8cac-4ea9-8aee-29112f3b5ca4",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:38:17.706664+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}

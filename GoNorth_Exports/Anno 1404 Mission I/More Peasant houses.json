@@ -1,0 +1,89 @@
+{
+  "Id": "6f31656a-301a-4c24-be08-11e3f5eec7cb",
+  "ProjectId": "0369b525-7e2b-4368-a9c3-f769e27314ad",
+  "Name": "More Peasant houses",
+  "Description": "In order to provide housing for more than 90 peasants, the player has to construct six more peasant houses.",
+  "IsMainQuest": false,
+  "Fields": [
+    {
+      "Id": "63ab0474-84eb-4ac0-8eb9-317035cca397",
+      "FieldType": 2,
+      "CreatedFromTemplate": false,
+      "Name": "Number of Houses Built",
+      "Value": "3",
+      "AdditionalConfiguration": "",
+      "ScriptSettings": {
+        "DontExportToScript": false,
+        "AdditionalScriptNames": ""
+      }
+    }
+  ],
+  "Start": [
+    {
+      "Id": "b152cf1a-15e9-4dd6-af42-b37dc19db397",
+      "X": 20,
+      "Y": 350
+    }
+  ],
+  "Text": [
+    {
+      "Text": "The player builds 8 additional houses.",
+      "Id": "41193024-e55a-44c2-95a8-18e376838c74",
+      "X": 209,
+      "Y": 299
+    }
+  ],
+  "Condition": [],
+  "Action": [
+    {
+      "ActionType": 7,
+      "ActionRelatedToObjectType": null,
+      "ActionRelatedToObjectId": "6f31656a-301a-4c24-be08-11e3f5eec7cb",
+      "ActionRelatedToAdditionalObjects": [],
+      "ActionData": "{\"fieldId\":\"63ab0474-84eb-4ac0-8eb9-317035cca397\",\"fieldName\":\"Number of Houses Built\",\"operator\":\"=\",\"valueChange\":\"11\"}",
+      "Id": "b0bc31a9-809e-4428-873b-f2d012eadd44",
+      "X": 525,
+      "Y": 274
+    }
+  ],
+  "AllDone": [],
+  "Finish": [
+    {
+      "Name": "",
+      "Color": "#FFFFFF",
+      "Id": "d44665aa-0aec-453e-8de0-89e43eadbf2c",
+      "X": 840,
+      "Y": 300
+    }
+  ],
+  "Link": [
+    {
+      "SourceNodeId": "b152cf1a-15e9-4dd6-af42-b37dc19db397",
+      "SourceNodePort": "output",
+      "TargetNodeId": "41193024-e55a-44c2-95a8-18e376838c74",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "41193024-e55a-44c2-95a8-18e376838c74",
+      "SourceNodePort": "output",
+      "TargetNodeId": "b0bc31a9-809e-4428-873b-f2d012eadd44",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    },
+    {
+      "SourceNodeId": "b0bc31a9-809e-4428-873b-f2d012eadd44",
+      "SourceNodePort": "output",
+      "TargetNodeId": "d44665aa-0aec-453e-8de0-89e43eadbf2c",
+      "TargetNodePort": "input",
+      "Vertices": null,
+      "Label": null
+    }
+  ],
+  "Reference": [],
+  "IsImplemented": false,
+  "ModifiedOn": "2025-10-15T14:49:20.9137831+00:00",
+  "ModifiedBy": "19cf6d5c-f293-4ab1-ad67-923b7fc74f2a"
+}
